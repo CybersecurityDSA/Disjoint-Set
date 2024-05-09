@@ -51,7 +51,7 @@ int main() {
     ds.makeSet(3);
     ds.makeSet(4);
     ds.unionSets(1, 2);
-    //ds.unionSets(2, 3);
+    ds.unionSets(2, 3);
     ds.unionSets(3,4);
     ds.unionSets(1,4);
 
