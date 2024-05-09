@@ -1,1 +1,38 @@
+Disjoint set ADT and Self organizing list
+Team members:
+•	Product manager:
+  	Sanjai V C
+•	Business Analyst:
+  	S Nittin Balajee
+•	Disjoint set:
+   •	Developer:
+	    V Anirudh Srinivasan
+	    Jayanth Shanmugam
+   •	Tester:
+    	S Adhitiya Karthikeyan
+    	Vikranth V
+•	Self-organizing set:
+   •	Developer:
+    	Siddharth Aravinth
+   •	Tester:
+    	Adhithyan L S
+    	B L Vijay Samuel 
+    	Sivabalan P
+Functions:
+•	Self-Organizing List:
+     •	Insertion
+     •	Deletion
+     •	Search
+     •	To check if the list is empty
+     •	To check If the list is full 
+     •	Get size of the list
+•	Disjoint Set:
+     •	Create a set
+     •	Union set
+     •	Find node
+
+
+
+
+          
 
