@@ -24,7 +24,7 @@ int getSize() {
     return size;
 }
 
-void insert(int val) {
+void insert(float val) {
     if (isFull()) {
         cout << "Error: List full!" << endl;
         return;
@@ -47,7 +47,7 @@ void remove(int pos) {
     size--;
 }
 
-bool search(int x) {
+bool search(float x) {
     bool searchResult = false;
     int pos = -1;
     for (int i = 0; i < size; i++) {
@@ -102,7 +102,7 @@ int main() {
         switch (choice) {
             case 1:
                 cout << "Enter integer element to insert" << endl;
-                int val;
+                float val;
                 cin >> val;
                 insert(val);
                 break;
@@ -114,7 +114,7 @@ int main() {
                 break;
             case 3:
                 cout << "Enter integer element to search" << endl;
-                int x;
+                float x;
                 cin >> x;
                 cout << "Search Result: " << (search(x) ? "true" : "false") << endl;
                 break;
