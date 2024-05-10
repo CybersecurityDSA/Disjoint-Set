@@ -23,19 +23,19 @@ struct DisjointSet {
         int rootY = find(y);
         if (rootX == rootY) return;
 
-        if (rank[rootX] < rank[rootY])
-            parent[rootX] = rootY;
-        else if (rank[rootX] > rank[rootY])
-            parent[rootY] = rootX;
+        if (rank[x] < rank[y])
+            parent[x] = y;
+        else if (rank[x] > rank[y])
+            parent[y] = x;
         else {
-            parent[rootY] = rootX;
-            rank[rootX]++;
+            parent[y] = x;
+            rank[x]++;
         }
     }
 
     // Function to get the rank of an element
     int getRank(int x) {
-        return rank[find(x)];
+        return rank[x];
     }
     int getParent(int x){
         return parent[find(x)];
@@ -50,16 +50,19 @@ int main() {
     ds.makeSet(2);
     ds.makeSet(3);
     ds.makeSet(4);
+    cout << "Rank of 4: " << ds.getRank(4) <<endl;
+    cout << "Parent of 4: " << ds.getParent(4) <<endl;
     ds.unionSets(1, 2);
-    ds.unionSets(2, 3);
+    //ds.unionSets(2, 3);
     ds.unionSets(3,4);
+    cout << "Rank of 4: " << ds.getRank(4) <<endl;
+    cout << "Parent of 4: " << ds.getParent(4) <<endl;
     ds.unionSets(1,4);
 
     // Print the rank of a number
-    cout << "Rank of 1: " << ds.getRank(1) <<endl;
+    cout << "Rank of 4: " << ds.getRank(4) <<endl;
     cout << "Parent of 4: " << ds.getParent(4) <<endl;
-
+    
 
     return 0;
 }
-
